@@ -1,7 +1,7 @@
 # IA Project
 
 ### Project Background & Description
-A group a Health Studies students want an Android Application to record the bowel habit of user and how it changes before and after having exercise. Also, they would like to compare the result of before and after using the Application. Therefore, we are asked to develop the application. It provides different functions, like collect questionnaire, add record, display useful information and play video. 
+A group a Health Studies students want an Android Application to record the bowel habit of user and how it changes before and after having exercise. Also, they would like to compare the result of before and after using the Application. Therefore, we are asked to develop the application. It provides different functions, like collect result of questionnaires, add records, display useful information and play video. 
 
 ---
 
