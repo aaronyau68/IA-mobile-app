@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chesterwong.iaproject.AddRecordActivity">
+
+
+
+    <include layout="@layout/content_add_record" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="adding record"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="71dp"
+
+            tools:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/txtSelectedDate"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:background="@android:color/holo_green_light"
+
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="71dp"
+
+            tools:layout_editor_absoluteY="16dp" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSaveRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/txtLableDate"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="日期:"
+                android:background="@drawable/border"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal|center"
+                tools:layout_editor_absoluteX="110dp"
+                tools:layout_editor_absoluteY="355dp" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+
+
+
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/txtLabletTime"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="時間:"
+                android:background="@drawable/border"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal|center"
+                tools:layout_editor_absoluteX="110dp"
+                tools:layout_editor_absoluteY="355dp" />
+
+
+            <TimePicker
+                android:id="@+id/simpleTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:timePickerMode="spinner"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/txtLabletColor"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="顏色:"
+                android:background="@drawable/border"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal|center"
+                tools:layout_editor_absoluteX="110dp"
+                tools:layout_editor_absoluteY="355dp" />
+
+            <EditText
+                android:id="@+id/editTextColor"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+
+
+
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/txtLabletShape"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="形狀:"
+                android:background="@drawable/border"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal|center"
+                tools:layout_editor_absoluteX="110dp"
+                tools:layout_editor_absoluteY="355dp" />
+
+            <EditText
+                android:id="@+id/editTextShape"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+
+
+
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/txtLabletQuantity"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="便量:"
+                android:background="@drawable/border"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal|center"
+                tools:layout_editor_absoluteX="110dp"
+                tools:layout_editor_absoluteY="355dp" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            <RadioButton
+
+            android:id="@+id/rdbLess"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="少量" />
+
+
+
+            <RadioButton
+
+            android:id="@+id/rdbGeneral"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="中量" />
+
+            <RadioButton
+
+            android:id="@+id/rdbMuch"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="大量" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/txtLabletExercise"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="運動:"
+                android:background="@drawable/border"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal|center"
+                tools:layout_editor_absoluteX="110dp"
+                tools:layout_editor_absoluteY="355dp" />
+
+
+            <CheckBox
+
+            android:id="@+id/chkExercise"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+
+            android:text="有運動" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chesterwong.iaproject.MainActivity">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context="demo.scrollviewdemo.MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:background="@android:color/holo_green_light"
+                android:text="每週排便紀錄"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="71dp"
+
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&gt;" />
+
+                <Button
+                    android:id="@+id/btnAddRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="add Record" />
+
+                <Button
+                    android:id="@+id/btnInfo"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Info"
+                    android:onClick="moreInfo"/>
+
+                <Button
+                    android:id="@+id/btnQuestionnaire2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q2"
+                    android:onClick="questionnairePage2"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnQuestionnaire"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="questionnairePage"
+                    android:text="Q"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLableMon"
+                    android:layout_width="110dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+
+                <TextView
+                    android:id="@+id/txtRecordMon"
+                    android:layout_width="190dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLableTue"
+                    android:layout_width="110dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+
+                <TextView
+                    android:id="@+id/txtRecordTue"
+                    android:layout_width="190dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLableWed"
+                    android:layout_width="110dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+
+                <TextView
+                    android:id="@+id/txtRecordWed"
+                    android:layout_width="190dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLableThu"
+                    android:layout_width="110dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+
+                <TextView
+                    android:id="@+id/txtRecordThu"
+                    android:layout_width="190dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLableFri"
+                    android:layout_width="110dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+
+                <TextView
+                    android:id="@+id/txtRecordFri"
+                    android:layout_width="190dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLableSat"
+                    android:layout_width="110dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+
+                <TextView
+                    android:id="@+id/txtRecordSat"
+                    android:layout_width="190dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLableSun"
+                    android:layout_width="110dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+
+                <TextView
+                    android:id="@+id/txtRecordSun"
+                    android:layout_width="190dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:text=""
+                    android:textSize="25sp"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="355dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="0dp" />
+</android.support.constraint.ConstraintLayout>

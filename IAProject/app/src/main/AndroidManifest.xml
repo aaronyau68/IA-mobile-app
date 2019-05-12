@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chesterwong.iaproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddRecordActivity"
+            android:label="@string/title_activity_add_record"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".addToGoogleExcel"
+            android:label="@string/title_activity_add_to_google_excel"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".questionnaire"
+            android:label="@string/title_activity_add_to_google_excel"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".questionnaire2"
+            android:label="@string/title_activity_add_to_google_excel"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".playVideoActivity"
+            android:label="@string/title_activity_add_to_google_excel"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <receiver android:name=".Notification_reciever"/>
+        <receiver android:name=".Notification_reciever1"/>
+    </application>
+
+</manifest>
